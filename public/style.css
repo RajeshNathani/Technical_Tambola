@@ -1,0 +1,30 @@
+body{
+    background: url('bg.jpg');
+}
+table{
+    background-color: white !important;
+    border-radius: 4px !important;
+    border: none !important;
+    width: 70% !important;
+    overflow-x: hidden;
+}
+td{
+    text-align: center;
+    width: 10%;
+    border: 1px solid black;
+    font-weight: bold;
+}
+td:active{
+    transition: 1s ease-in;
+}
+.card{
+    width: 50%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: white;
+}
