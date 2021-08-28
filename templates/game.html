@@ -12,7 +12,7 @@
 <body>
     <div class="container">
         <h1>Here's Your Ticket</h1> <br>
-            <table class="table table-bordered" id='ticket'>
+            <table class="table table-bordered table-responsive" id='ticket'>
             {% for i in range(1, rows+1)%}
                 <tr>
                 {% if i == 1 %} 
@@ -47,6 +47,7 @@
                 </tr>
             {% endfor %}
             </table>
+            <h3>If You're on mobile you can scroll your ticket</h3>
             </div>
         
 <script>

@@ -18,7 +18,7 @@ td:active{
     transition: 1s ease-in;
 }
 .card{
-    width: 50%;
+    width: 100%;
 }
 .container{
     display: flex;
@@ -27,4 +27,9 @@ td:active{
     align-items: center;
     height: 100vh;
     color: white;
+}
+@media(max-width:560px){
+    table{
+        width: fit-content !important;
+    }
 }

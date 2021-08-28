@@ -1,0 +1,307 @@
+Question,Answer
+"Which of the following shows multiple inheritances?
+a) A->B->C
+b) A->B; A->C
+c) A,B->C
+d) B->A
+","A,B->C"
+"What will be the output of the following C++ code?
+#include <iostream>
+using namespace std;
+ 
+class A 
+{
+   int a;
+   A() { a = 5;}
+};
+ 
+int main()
+{
+    A *obj = new A;
+    cout << obj->a;
+}
+",Compile Time Error
+"Which out of the following features of OOPs is not used in the following C++ code (Inheritance , Abstraction , Polymorphism)
+class A
+{
+    int i;
+    public:
+    void print(){cout<<""hello""<<i;}
+}
+ 
+class B: public A
+{
+    int j;
+    public:
+    void assign(int a){j = a;}
+}",Polymorphism
+"What will be the output of the following C++ code?
+#include<iostream>
+using namespace std;
+int x = 1;
+int main()
+{
+    int x = 2;
+    {
+        int x = 3;
+        cout << ::x << endl;
+    }
+    return 0;
+}
+",1
+"What will be the output of the following C code?
+   #include <stdio.h>
+   int main()
+   {
+       enum {ORANGE = 5, MANGO, BANANA = 4, PEACH};
+       printf(""PEACH = %d\n"", PEACH);
+   }",PEACH = 5
+"What will be the output of the following C code?
+
+#include <stdio.h>
+#define EVEN 0 
+#define ODD 0 
+int main()
+{
+  int i = 3;
+  switch (i & 1)
+  {
+    case EVEN: printf(""Even"");
+      break;
+    case ODD: printf(""odd"");
+      break;
+    default: printf(""Default"");
+  }
+  return 0;
+}
+
+",ODD
+" What will be the output of the following C code?
+   #include <stdio.h>
+   int main()
+   {
+       float f1 = 0.1;
+       if (f1 == 0.1)
+           printf(""equal\n"");
+       else
+           printf(""not equal\n"");
+   }",not equal
+"#include <stdio.h>
+int main();
+{
+  int i;
+  if (printf(""0""))
+    i = 3;
+  else
+    i = 5;
+  printf(""%d"", i);
+  return 0;
+}
+",03
+"#include <stdio.h>
+int i;
+int main()
+{
+  if (i);
+  else
+    printf(""Else"");
+  return 0;
+}
+",Else
+"a = ['XX', 'YY']  
+for i in a:  
+    i.lower()  
+print(a)  
+","['XX', 'YY']"
+"not(10<20) and not(10>30)",FALSE
+"#include <stdio.h>
+int main()
+{
+  int a = 5;
+  switch(a)
+  {
+    default:
+      a = 4;
+    case 6:
+      a--;
+    case 5:
+      a = a+1;
+    case 1:
+      a = a-1;     
+   }
+   printf(""%d "", a);
+   return 0;
+}
+",5
+" What will be the output of the following Python code?
+if (9 < 0) and (0 < -9):
+    print(""hello"")
+elif (9 > 0) or False:
+    print(""good"")
+else:
+    print(""bad"")
+",good
+"#include <stdio.h>
+int main()
+{
+  int i = 0;
+  switch (i)
+  {
+    case '0': printf(""Logical"");
+    case '1': printf(""C Quiz"");
+    default: printf(""Logical C Quiz"")
+  }
+  return 0;
+}
+",Logical C Quiz
+"What will be the output of the following Python code?
+l=[1, 0, 2, 0, 'hello', '', []]
+list(filter(bool, l))
+print(l)","[1, 2, ‘hello’]"
+" What will be the output of the following Python code if a=10 and b =20?
+a=10
+b=20
+a=a^b
+b=a^b
+a=a^b
+print (a, b)
+",20 10
+"What is the average value of the following Python code snippet?
+grade1 = 80
+grade2 = 90
+average = (grade1 + grade2) / 2",85
+"Which of the following are legal lines of Java code?
+   1. int w = (int)888.8;
+   2. byte x = (byte)100L;
+   3. long y = (byte)100;
+   4. byte z = (byte)100L;",All lines are legal
+"What will be the output of the following Java code?
+   class increment {
+       public static void main(String args[])
+       {       
+            int g = 3;
+            System.out.print(++g * 8);
+       }
+   }
+",32
+"public class OperatorPrecedence {
+    public static void main(String[] args) {
+        int a = 7 * 3 + 24 / 3 - 5;
+        int b = (7 * 3) + (24 / 3) - 5;
+        System.out.print(a + "", "" + b);
+    }
+}","24,24"
+"public class Precedence {
+    public static void main(String[] args) {
+        int x = 20;
+        int y = 10;
+        double z = x++ - y * 7 / --y + x * 10;
+        System.out.println(z);
+    }
+}",223
+Which Access specifier has less scope in JAVA default or protected?,Default
+"What is the output of following code snippet
+ 
+X = [1,2,3,4,5,6]
+ 
+Try:
+        print(x[-7])
+except Exception as e:
+        print(""Error"")
+finally:
+        print(len(x))","Error
+6
+"
+"What is the output of the following Java code?
+
+public class array
+{
+        public static void main(String args[])
+        {
+                int []arr = {1,2,3,4,5};
+                System.out.println(arr[5]);
+        }
+}",ArrayIndexOutOfBound Exception 
+Which is the world’s first major cloud service provider?,AWS
+The value of correlation can be -0.14? ,TRUE
+The relation between dependent variable and one or more independent variable is called?,Regression
+Name the architecture in which a user can own some private servers as well as they can distribute some of the workloads on the public cloud?,Hybrid
+Which of the following feature is used for scaling of EC2 sites in AWS?,Auto Scaling
+Which one of the two is the subset of machine learning? Deep Learning Artificial Intelligence,Deep Learning
+"Which cloud service supply an on-demand environment for developing, testing, delivering and managing software applications.",PaaS
+What is a virtual server platform that allows users to create and run virtual machines on Amazon’s server farm.,EC2
+How many types of Cloud Deployment models are there?,4
+Is it possible to add an existing VM to an availability set in Azure?,yes
+Office 365 is which type of cloud service by Microsoft Azure?,SaaS
+Which AWS cloud-based storage system allows you to store data objects ranging in size from 1 byte up to 5GB.,S3
+Normal distribution is also known as?,Gaussian
+Which company is the biggest client of Amazon web services on the basis of cost borne?,Netflix
+Which of the following dynamically grow and shrink the load-balancing capacity to adjust to traffic demands?,Elastic Load Balancing
+A type of data which consists of observations on only a single characteristic or attribute.,Univariate
+What is the other name of Python Data Analysis Library?,Pandas
+The value that appears most often in a set of data values is called?,Mode
+.Amazon EBS currently supports up to ________ IOPS per volume,1000
+Which role is in Microsoft Azure?,VM Role
+The matrix multiplication of 4*3 and 3*4 order gives the matrix of order?,4*4
+When all the values along main diagonal is one then which matrix it is?,Identity
+What is the full form of Blob?,Binary Large Object
+Digital Ocean is an example of?,IaaS
+Amazon _______ is a web service that provides real time monitering to Amazon’s EC2 customers.,CloudWatch
+.IAM in AWS refers to ____.,Identity & Access Management
+.Which AWS service allows you to create instances of the MySQL database to support your Web sites?,AWS RDS
+"Write the output of the following code as per the following csv file
+Name, FileNo, Country
+Sam, 13242, Brazil
+Bruno, 14321, Argentina
+ 
+import pandas as pd
+df = pd.read_csv(“data.csv”)
+print(df.loc[df[“Name”]==”Bruno”][“FileNo”].values[0])
+",14321
+Who created Bitcoin?,Satoshi Nakamoto
+Who created Ethereum?,Vitalik Buterin
+What hashing algorithm does bitcoin generally use?,SHA-256
+What large-cap company has created their own blockchain for commercial as well as personal uses? The blockchain goes by the name 'Hyperledger,IBM
+What kind of networks do blockchains use?,P2P
+On what item was the first Bitcoin spent?,Pizzas
+By what attack can one control a complete blockchain network and all of its nodes?,51% Attack
+"Say there are 32 transactions as leaf nodes. If you are using a merkle root tree, how many layers does the tree have?",log base 2 (32) + 1 = 6
+Where can blockchain be used exclusively in Indian politics? ,Elections
+What kind of linked list represents how blocks are connected in a blockchain?,Doubly-ended LL
+Full form of xss?,cross site scripting
+Full form of sql ?,structured query language
+Full form of CBC ?,Cipher block chaining
+Command to list directories in linux ?,ls
+IDS fullform?,Intrusion detection system.
+PORT number of ssh ?,22
+FTP full form ?,file transfer protocol
+What is nmap used for?,Port scanning
+Full form of IPS?,Intrusion prevention system.
+Which type of hacking is a legal hacking?,Ethical Hacking
+What is the first step in web application hacking?,Reconnaissance
+CVE full form ?,Common vulnerabilities and exposures
+Are risk and threat the same? ,No
+Web page editors works on a ____ principle,WYSIWYG
+Which program is used by web clients to view the web pages?,Web Browser
+What is the Unique address used to locate any resource on web?,URL
+What are shared on the Internet and are called as Web pages?,HyperText Documents
+Which tag is used to display text in title bar of a web document?,title
+"The language that instructs the browser on how to display the hypertext, and adds pictures to the document is",HTML
+Which tag is used to identify the keywords describing the site?,Meta
+Which are used with a tag to modify its function?,Attributes
+"Assuming int is of 4bytes, what is the size of int arr[15]",60
+"In general, the index of the first element in an array is",0
+Elements in an array are accessed,sequentially
+Worst case complexity of  selection sort?,O(n^2)
+Best case complexity of insertion sort?,O(n)
+Which type of topology is best suited for large businesses which must carefully control and coordinate the operation of distributed branch outlets?,Star 
+Which software prevents the external access to a system?,Firewall
+"computer software that is released under a license in which the copyright holder grants users the rights to use, study, change, and distribute the software and its source code to anyone and for any purpose. ",Open Source
+The maximum length (in bytes) of an IPv4 datagram is?,65535
+When the mail server sends mail to other mail servers it becomes?,SMTP Client
+The length of an IPv6 address is?,128 bits
+Fastest wired mode of data transfer?,Optical Fibre
+The term WAN stands for?,Wide area network
+"In specific, if the systems use separate protocols, which one of the following devices is used to link two systems?",Gateway
+The private key in asymmetric key cryptography is kept by?,Receiver
+"In the cryptography, the sequence of the letters is rearranged by?",Transposition Ciphers
