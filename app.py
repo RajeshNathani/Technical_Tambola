@@ -27,7 +27,7 @@ def game():
         su = data['Username'].str.contains(name).sum(
         ) and data['Password'].str.contains(password).sum()
         if su >= 1:
-            first = data[data['Username'] == "raj1234"]['first'].tolist()
+            first = data[data['Username'] == name]['first'].tolist()
             second = data[data['Username'] == name]['second'].tolist()
             third = data[data['Username'] == name]['third'].tolist()
             print(first)
